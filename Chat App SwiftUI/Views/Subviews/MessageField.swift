@@ -10,7 +10,7 @@ import SwiftUI
 struct MessageField: View {
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        CustomTextField()
     }
 }
 
@@ -24,8 +24,24 @@ struct CustomTextField: View {
     @State var textFieldText: String = ""
     
     var body: some View {
-        TextField("Enter message", text: $textFieldText)
-            .background(.gray)
-            .padding()
+        HStack(spacing: 10.0) {
+            TextField("Enter message", text: $textFieldText)
+                .padding(.horizontal, 20)
+                .padding(.vertical, 10)
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(15)
+                .font(.headline)
+                .foregroundColor(Color("RoyalPurple"))
+            
+            Button {
+                print(textFieldText)
+            } label: {
+                Image(systemName: "paperplane.circle.fill")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(Color("RoyalPurple"))
+            }
+        }
+        .padding()
     }
 }
