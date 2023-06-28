@@ -15,11 +15,13 @@ struct ChatView: View {
         Message(id: "3", content: "That's my favourite colour too!", sent: true, timestamp: Date())
     ]
     
+    func sendPressed(text: String) {
+        print(text)
+    }
+    
     var body: some View {
         VStack {
             VStack {
-                
-                
                 ScrollView {
                     ForEach(messages) { message in
                         MessageBubble(message: message)
@@ -30,7 +32,7 @@ struct ChatView: View {
                 .background(.white)
             }
             
-            MessageField()
+            MessageField(sendPressed: sendPressed)
         }
         .toolbar {
             ToolbarItem(placement: .principal) {

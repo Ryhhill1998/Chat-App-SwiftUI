@@ -22,15 +22,6 @@ struct ContentView: View {
                     }
                 }
             }
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .principal) {
-//                    TitleRow()
-//                        .padding(.bottom, 5)
-//                }
-//            }
-//            .toolbarBackground(Color("RoyalPurple"), for: .navigationBar)
-//            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
