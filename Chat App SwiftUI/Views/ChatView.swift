@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ChatView: View {
     
-    let messages = [
+    @State var messages = [
         Message(id: "1", content: "Hello there! What is your favourite colour?", sent: true, timestamp: Date()),
         Message(id: "2", content: "Hi! My favourite colour is blue", sent: false, timestamp: Date()),
         Message(id: "3", content: "That's my favourite colour too!", sent: true, timestamp: Date())
     ]
     
     func sendPressed(text: String) {
-        print(text)
+        messages.append(Message(id: "\(messages.count + 1)", content: text, sent: true, timestamp: Date()))
     }
     
     var body: some View {

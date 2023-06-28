@@ -39,11 +39,12 @@ struct CustomTextField: View {
                 .font(.headline)
                 .foregroundColor(Color("RoyalPurple"))
                 .accentColor(Color("RoyalPurple"))
-
+            
             Button {
-                if textFieldText == "" { return }
-                sendPressed(textFieldText)
-                textFieldText = ""
+                if textFieldText != "" {
+                    sendPressed(textFieldText)
+                    textFieldText = ""
+                }
             } label: {
                 Image(systemName: "paperplane.circle.fill")
                     .resizable()
