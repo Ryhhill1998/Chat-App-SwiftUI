@@ -12,6 +12,9 @@
 		5B4955D42A4C2258007DAC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4955D32A4C2258007DAC24 /* Assets.xcassets */; };
 		5B4955D72A4C2258007DAC24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4955D62A4C2258007DAC24 /* Preview Assets.xcassets */; };
 		5B4955E02A4C3FD5007DAC24 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955DF2A4C3FD5007DAC24 /* ChatView.swift */; };
+		5B4955E32A4C74F9007DAC24 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955E22A4C74F9007DAC24 /* TitleRow.swift */; };
+		5B4955E62A4C77D1007DAC24 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955E52A4C77D1007DAC24 /* Message.swift */; };
+		5B4955E92A4C7891007DAC24 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955E82A4C7891007DAC24 /* MessageBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5B4955D62A4C2258007DAC24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B4955DE2A4C3345007DAC24 /* Chat-App-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Chat-App-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5B4955DF2A4C3FD5007DAC24 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5B4955E22A4C74F9007DAC24 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		5B4955E52A4C77D1007DAC24 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5B4955E82A4C7891007DAC24 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				5B4955DE2A4C3345007DAC24 /* Chat-App-SwiftUI-Info.plist */,
+				5B4955E42A4C77C3007DAC24 /* Models */,
 				5B4955DD2A4C2F37007DAC24 /* Views */,
 				5B4955CF2A4C2257007DAC24 /* Chat_App_SwiftUIApp.swift */,
 				5B4955D32A4C2258007DAC24 /* Assets.xcassets */,
@@ -74,10 +81,28 @@
 		5B4955DD2A4C2F37007DAC24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B4955E12A4C74D6007DAC24 /* Subviews */,
 				5B4955D12A4C2257007DAC24 /* ContentView.swift */,
 				5B4955DF2A4C3FD5007DAC24 /* ChatView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5B4955E12A4C74D6007DAC24 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				5B4955E22A4C74F9007DAC24 /* TitleRow.swift */,
+				5B4955E82A4C7891007DAC24 /* MessageBubble.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		5B4955E42A4C77C3007DAC24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B4955E52A4C77D1007DAC24 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4955D22A4C2257007DAC24 /* ContentView.swift in Sources */,
+				5B4955E92A4C7891007DAC24 /* MessageBubble.swift in Sources */,
 				5B4955E02A4C3FD5007DAC24 /* ChatView.swift in Sources */,
+				5B4955E62A4C77D1007DAC24 /* Message.swift in Sources */,
 				5B4955D02A4C2257007DAC24 /* Chat_App_SwiftUIApp.swift in Sources */,
+				5B4955E32A4C74F9007DAC24 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
