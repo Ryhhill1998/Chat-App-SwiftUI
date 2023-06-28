@@ -11,8 +11,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.red.edgesIgnoringSafeArea(.all)
+                Color.white.edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    NavigationLink {
+                        Text("Chats")
+                    } label: {
+                        Text("Go to chats")
+                    }
+                }
             }
+            .navigationTitle("")
         }
     }
 }
