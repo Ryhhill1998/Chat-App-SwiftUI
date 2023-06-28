@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color.white.edgesIgnoringSafeArea(.all)
                 
@@ -18,10 +18,19 @@ struct ContentView: View {
                         ChatView()
                     } label: {
                         Text("Go to chat")
+                            .foregroundColor(Color.blue)
                     }
                 }
             }
-            .navigationTitle("")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .principal) {
+//                    TitleRow()
+//                        .padding(.bottom, 5)
+//                }
+//            }
+//            .toolbarBackground(Color("RoyalPurple"), for: .navigationBar)
+//            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

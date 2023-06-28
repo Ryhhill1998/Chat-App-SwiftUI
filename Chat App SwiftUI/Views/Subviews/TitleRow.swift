@@ -14,24 +14,24 @@ struct TitleRow: View {
     let name = "Sarah Smith"
     
     var body: some View {
-        HStack(spacing: 20.0) {
+        HStack(spacing: 10.0) {
             AsyncImage(url: imageUrl) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 35, height: 35)
                     .cornerRadius(25)
             } placeholder: {
                 ProgressView()
             }
             .overlay {
                 Circle()
-                    .stroke(Color.white, lineWidth: 3)
+                    .stroke(Color.white, lineWidth: 2)
             }
             
             VStack(alignment: .leading) {
                 Text(name)
-                    .font(.system(size: 25))
+                    .font(.system(size: 15))
                     .bold()
                     .foregroundColor(.white)
                 
@@ -39,15 +39,8 @@ struct TitleRow: View {
                     .font(.caption)
                     .foregroundColor(.white)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Image(systemName: "phone.fill")
-                .foregroundColor(.gray)
-                .padding(10.0)
-                .background(.white)
-                .clipShape(Circle())
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

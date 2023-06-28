@@ -16,17 +16,9 @@ struct ChatView: View {
     ]
     
     var body: some View {
-        ZStack {
-            Color("RoyalPurple").edgesIgnoringSafeArea(.all)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text("toolbar")
-                            .multilineTextAlignment(.leading)
-                    }
-                }
-            
+        VStack {
             VStack {
-                TitleRow()
+                
                 
                 ScrollView {
                     ForEach(messages) { message in
@@ -36,10 +28,18 @@ struct ChatView: View {
                 }
                 .padding(.top, 10.0)
                 .background(.white)
-                
-                
+            }
+            
+            MessageField()
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                TitleRow()
+                    .padding(.bottom, 5)
             }
         }
+        .toolbarBackground(Color("RoyalPurple"), for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
