@@ -16,7 +16,8 @@ struct MessageBubble: View {
         VStack(alignment: message.sent ? .trailing : .leading) {
             HStack {
                 Text(message.content)
-                    .padding()
+                    .padding(.horizontal, 15)
+                    .padding(.vertical, 10)
                     .foregroundColor(.white)
                     .fontWeight(.semibold)
                     .background(Color(message.sent ? "RoyalPink" : "RoyalPeach"))

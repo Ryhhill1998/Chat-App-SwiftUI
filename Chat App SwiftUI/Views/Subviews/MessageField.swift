@@ -31,14 +31,23 @@ struct CustomTextField: View {
     
     var body: some View {
         HStack(spacing: 10.0) {
-            TextField("Enter message", text: $textFieldText)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 7)
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(15)
-                .font(.headline)
-                .foregroundColor(Color("RoyalPurple"))
-                .accentColor(Color("RoyalPurple"))
+            ZStack(alignment: .leading) {
+                if textFieldText.isEmpty {
+                    Text("Type something")
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 7)
+                        .foregroundColor(Color("RoyalPurple").opacity(0.6))
+                }
+                
+                TextField("", text: $textFieldText)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 7)
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(15)
+                    .font(.headline)
+                    .foregroundColor(Color("RoyalPurple"))
+                    .accentColor(Color("RoyalPurple"))
+            }
             
             Button {
                 if textFieldText != "" {

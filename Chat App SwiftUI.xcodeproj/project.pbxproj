@@ -16,6 +16,8 @@
 		5B4955E62A4C77D1007DAC24 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955E52A4C77D1007DAC24 /* Message.swift */; };
 		5B4955E92A4C7891007DAC24 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955E82A4C7891007DAC24 /* MessageBubble.swift */; };
 		5B4955EB2A4C8126007DAC24 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4955EA2A4C8126007DAC24 /* MessageField.swift */; };
+		5B808B112A4CCA3800EB69FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B808B102A4CCA3800EB69FA /* HomeView.swift */; };
+		5B808B132A4CCCE700EB69FA /* NavLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B808B122A4CCCE700EB69FA /* NavLinkLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5B4955E52A4C77D1007DAC24 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		5B4955E82A4C7891007DAC24 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		5B4955EA2A4C8126007DAC24 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		5B808B102A4CCA3800EB69FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B808B122A4CCCE700EB69FA /* NavLinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLinkLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				5B4955E12A4C74D6007DAC24 /* Subviews */,
 				5B4955D12A4C2257007DAC24 /* ContentView.swift */,
 				5B4955DF2A4C3FD5007DAC24 /* ChatView.swift */,
+				5B808B102A4CCA3800EB69FA /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				5B4955E22A4C74F9007DAC24 /* TitleRow.swift */,
 				5B4955E82A4C7891007DAC24 /* MessageBubble.swift */,
 				5B4955EA2A4C8126007DAC24 /* MessageField.swift */,
+				5B808B122A4CCCE700EB69FA /* NavLinkLabel.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -179,10 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4955D22A4C2257007DAC24 /* ContentView.swift in Sources */,
+				5B808B132A4CCCE700EB69FA /* NavLinkLabel.swift in Sources */,
 				5B4955E92A4C7891007DAC24 /* MessageBubble.swift in Sources */,
 				5B4955E02A4C3FD5007DAC24 /* ChatView.swift in Sources */,
 				5B4955EB2A4C8126007DAC24 /* MessageField.swift in Sources */,
 				5B4955E62A4C77D1007DAC24 /* Message.swift in Sources */,
+				5B808B112A4CCA3800EB69FA /* HomeView.swift in Sources */,
 				5B4955D02A4C2257007DAC24 /* Chat_App_SwiftUIApp.swift in Sources */,
 				5B4955E32A4C74F9007DAC24 /* TitleRow.swift in Sources */,
 			);

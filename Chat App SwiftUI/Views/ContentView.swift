@@ -11,16 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color("White").edgesIgnoringSafeArea(.all)
+                Color("White").ignoresSafeArea()
                 
-                VStack {
-                    NavigationLink {
-                        ChatView()
-                    } label: {
-                        Text("Go to chat")
-                            .foregroundColor(Color.blue)
-                    }
-                }
+                HomeView()
             }
         }
     }
