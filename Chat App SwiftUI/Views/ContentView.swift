@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.white.edgesIgnoringSafeArea(.all)
+                Color("White").edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     NavigationLink {

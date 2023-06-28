@@ -29,11 +29,12 @@ struct ChatView: View {
                     }
                 }
                 .padding(.top, 10.0)
-                .background(.white)
+                .background(Color("White"))
             }
             
             MessageField(sendPressed: sendPressed)
         }
+        .background(Color("White"))
         .toolbar {
             ToolbarItem(placement: .principal) {
                 TitleRow()
