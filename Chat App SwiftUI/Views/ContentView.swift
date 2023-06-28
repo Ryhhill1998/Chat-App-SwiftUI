@@ -15,9 +15,9 @@ struct ContentView: View {
                 
                 VStack {
                     NavigationLink {
-                        Text("Chats")
+                        ChatView()
                     } label: {
-                        Text("Go to chats")
+                        Text("Go to chat")
                     }
                 }
             }
